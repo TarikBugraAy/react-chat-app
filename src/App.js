@@ -1,12 +1,19 @@
-import React from "react";
+
 import { ChatEngine} from "react-chat-engine"
 import "./App.css"
+import ChatFeed from './components/ChatFeed';
 
+const projectID="c551396f-8095-42c5-aa72-6ac89159a732";
 const App = () => {
     return (
-        <div>
-            <h1>tatık</h1>
-        </div>
+        <ChatEngine
+            height="100vh"
+            projectID={projectID}
+            userName="Logar Komutanoğlu"
+            userSecret="logar"
+            renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
+
+        />
 
     );
 };
