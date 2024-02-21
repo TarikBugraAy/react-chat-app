@@ -1,3 +1,24 @@
+# TBA Chat Application
+
+This project is created using [JavaScript Mastery youtube channel's tutorial](https://youtu.be/jcOKU9f86XE?si=oqZ9Dkm3-4Lt9Df7). It is a simple chat application created using React.js and the Chat Engine API. Users can use it like any other chat application.
+
+## Installation
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/.....
+2. Install dependencies:
+    ```bash
+    npm install
+3. Obtain an ProjectID from Chat Engine API and replace the ProjectID in the App.js and LoginForm.jsx with your ProjectID.
+
+# Acknowledgements
+* JavaScript Mastery YouTube Channel - [Link to the tutorial used for creating this project.](https://youtu.be/jcOKU9f86XE?si=oqZ9Dkm3-4Lt9Df7)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
