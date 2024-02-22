@@ -1,5 +1,5 @@
 # TBA Chat Application
-
+#There is problem in the build in this version.
 This project is created using [JavaScript Mastery youtube channel's tutorial](https://youtu.be/jcOKU9f86XE?si=oqZ9Dkm3-4Lt9Df7). It is a simple chat application created using React.js and the Chat Engine API. Users can use it like any other chat application.
 
 ## Installation
