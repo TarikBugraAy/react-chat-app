@@ -1,113 +1,126 @@
-/* CHAT STYLES */
+/* Dark mode styles */
+.dark-mode {
+  background-color: #222; /* Dark purple background */
+  color: #ffffff; /* Light grey text color */
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  color: #ffffff00; /* Changed toggle button color to light grey */
+  background-color: #c90bad00;
+}
 * {
     font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
       Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
       Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     letter-spacing: 0.5px;
   }
-  
+
   .ce-chat-list {
     background-color: rgb(240, 240, 240) !important;
   }
-  
+
   .ce-chats-container {
     background-color: rgb(240, 240, 240) !important;
   }
-  
+
   .ce-active-chat-card {
     background-color: #cabcdc !important;
     border: 4px solid #cabcdc !important;
     border-radius: 0px !important;
   }
-  
+
   .ce-chat-subtitle-text {
     color: #595959 !important;
   }
-  
+
   .ce-chat-form-container {
     padding-bottom: 20px !important;
   }
-  
+
   .ce-text-input {
     border-radius: 6px !important;
     border: 1px solid #3b2a50 !important;
   }
-  
+
   .ce-primary-button {
     border-radius: 6px !important;
     background-color: #7554a0 !important;
     position: relative;
     bottom: 1px;
   }
-  
+
   .ce-danger-button {
     background-color: white !important;
     border-radius: 22px !important;
   }
-  
+
   .ce-settings {
     background-color: rgb(240, 240, 240) !important;
   }
-  
+
   .ce-autocomplete-input {
     border-radius: 6px !important;
     border: 1px solid #3b2a50 !important;
   }
-  
+
   .ce-autocomplete-options {
     border-radius: 6px !important;
     border: 1px solid #3b2a50 !important;
     background-color: white !important;
   }
-  
+
   .ce-chat-settings-container {
     padding-top: 12px !important;
   }
-  
+
   .ce-chat-avatars-row {
     display: none !important;
   }
-  
+
   /* CUSTOM FEED */
-  
+
   .chat-feed {
     height: 100%;
     width: 100%;
     overflow: scroll;
     background-color: rgb(240, 240, 240);
   }
-  
+
   .chat-title-container {
     width: calc(100% - 36px);
     padding: 18px;
     text-align: center;
   }
-  
+
   .chat-title {
     color: #7554a0;
     font-weight: 800;
     font-size: 24px;
   }
-  
+
   .chat-subtitle {
     color: #7554a0;
     font-weight: 600;
     font-size: 12px;
     padding-top: 4px;
   }
-  
+
   .message-row {
     float: left;
     width: 100%;
     display: flex;
     margin-left: 18px;
   }
-  
+
   .message-block {
     width: 100%;
     display: inline-block;
   }
-  
+
   .message-avatar {
     width: 44px;
     height: 44px;
@@ -118,14 +131,14 @@
     background-position: center;
     background-size: 48px;
   }
-  
+
   .message {
     padding: 12px;
     font-size: 16px;
     border-radius: 6px;
     max-width: 60%;
   }
-  
+
   .message-image {
     margin-right: 18px;
     object-fit: cover;
@@ -137,12 +150,12 @@
     min-height: 100px;
     min-width: 100px;
   }
-  
+
   .read-receipts {
     position: relative;
     bottom: 6px;
   }
-  
+
   .read-receipt {
     width: 13px;
     height: 13px;

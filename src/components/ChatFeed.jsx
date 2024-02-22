@@ -20,13 +20,13 @@ const ChatFeed = (props) => {
 
   const renderMessages = () => {
     const keys = Object.keys(messages);
-
+  
     return keys.map((key, index) => {
       const message = messages[key];
       const lastMessageKey = index === 0 ? null : keys[index - 1];
       const isMyMessage = userName === (message.sender && message.sender.username);
-
-
+      const time = new Date(message.created).toLocaleString([], { hour: 'numeric', minute: 'numeric', hour12: true });
+  
       return (
         <div key={`msg_${index}`} style={{ width: '100%' }}>
           <div className="message-block">
@@ -36,6 +36,9 @@ const ChatFeed = (props) => {
           </div>
           <div className="read-receipts" style={{ marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMyMessage ? '0px' : '68px' }}>
             {renderReadReceipts(message, isMyMessage)}
+          </div>
+          <div className="timestamp" style={{ textAlign: isMyMessage ? 'right' : 'left', color: '#999', fontSize: '0.8em', marginTop: '2px' }}>
+            {time}
           </div>
         </div>
       );
