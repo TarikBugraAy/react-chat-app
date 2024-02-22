@@ -1,9 +1,9 @@
 const TheirMessage = ({ lastMessage, message }) => {
-  const isFirstMessageByUser = !lastMessage || lastMessage.sender.username !== message.sender.username;
+  const isFirstMessageByUser = !lastMessage || (message.sender && lastMessage.sender.username !== message.sender.username);
 
   return (
     <div className="message-row">
-      {isFirstMessageByUser && (
+      {isFirstMessageByUser && message.sender && message.sender.username && ( // Add null checks for message.sender and message.sender.username
         <div
           className="message-avatar"
           style={{ backgroundImage: message.sender && `url(${message.sender.avatar})` }}
