@@ -1,7 +1,8 @@
 # TBA Chat Application
 
 This project is created using [JavaScript Mastery youtube channel's tutorial](https://youtu.be/jcOKU9f86XE?si=oqZ9Dkm3-4Lt9Df7). It is a simple chat application created using React.js and the Chat Engine API. Users can use it like any other chat application.
-
+## Site Link
+* https://tbachat-mark-2.netlify.app/
 ## Installation
 To run this project locally, follow these steps:
 
